@@ -7,7 +7,7 @@ problema:
 
 Dada una serie de disponibilidades horarias de _p_ personas que desean reunirse,
 entregar el rango horario en que las mismas pueden coincidir o bien el texto
-_Horarios no coordinables_ en caso de que sus horarios no tengan momentos en
+"_Horarios no coordinables_" en caso de que sus horarios no tengan momentos en
 común.
 
 La cantidad de personas es siempre de al menos 2.
@@ -52,13 +52,13 @@ Ejemplos de posibles líneas de entrada:
 
 - más de un rango
 ```
-p6 10-13,19:30-
+10-13,19:30-
 ```
 
 ## Formato de salida
 
 Entregar los resultados en formato CSV para el caso de coincidencia horaria. Los
-horarios pueden ser expresados en formato militar (sin el separador de dos
+horarios deben ser expresados en formato militar (sin el separador de dos
 puntos entre horas y minutos).
 
 Ejemplo:
