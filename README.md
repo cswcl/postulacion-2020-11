@@ -1,40 +1,67 @@
 # Ejercicio para postular a CSW Consultores Ambientales
 
-Escribir una aplicación que permita resolver el siguiente problema:
+## Descripción
+
+Escribir en el archivo `index.js` un script que permita resolver el siguiente
+problema:
 
 Dada una serie de disponibilidades horarias de _p_ personas que desean reunirse,
-entregar un rango horario que maximice la cantidad de personas que pueden
-asistir o bien determinar si los conjuntos horarios son completamente disjuntos
-y, por lo tanto, no es posible encontrar un horario de reunión.
+entregar el rango horario en que las mismas pueden coincidir o bien el texto
+_Horarios no coordinables_ en caso de que sus horarios no tengan momentos en
+común.
 
-_p_ > 2
+La cantidad de personas es siempre de al menos 2.
 
 El formato de entrada es un archivo con la disponibilidad horaria de cada
-persona en cada línea.
+persona en cada línea. La disponibilidad se expresa como un rango horario, que
+se define mediante dos horarios separados por un guión. Puede haber más de un
+rango en una línea, los mismos están separados por comas.
 
-Un signo numeral (#) al comienzo de la línea indica que se debe ignorar, es un
-comentario.
+Los horarios se pueden expresar sin minutos.
 
-El primer campo es el nombre de la persona.
+Se puede especificar un rango indicando solo el horario inicial. Se entiende en
+este caso que la disponibilidad de esa persona es desde esa hora en adelante y
+hasta el final del día.
 
-El segundo campo es uno o varios rangos horarios separados por comas si hay más
-de uno y determinados por el guión intermedio. Los mismos se pueden
-especificar de distintas maneras.
+## Formato de entrada
 
-Ejemplo de entrada:
+Ejemplos de posibles líneas de entrada:
 
 
+- solo horas
 ```
-# solo horas
-p1 18-19
-# primer horario con minutos, segundo solo hora, y viceversa
-p2 15:20-19
-p3 10-12:30
-# ambos horarios completos
-p4 18:20-20:45
-# indicador de disponibilidad desde un horario en adelante, se debe considerar
-# hasta las 23:59
-p5 17-
-# ejemplo con varios rangos
+18-19
+```
+
+- primer horario con minutos, segundo solo hora, y viceversa
+```
+15:20-19
+10-12:30
+```
+
+- ambos horarios completos
+```
+18:20-20:45
+```
+
+- indicador de disponibilidad desde un horario en adelante, se debe considerar
+  disponible hasta las 23:59
+```
+17-
+```
+
+- más de un rango
+```
 p6 10-13,19:30-
+```
+
+## Formato de salida
+
+Entregar los resultados en formato CSV para el caso de coincidencia horaria. Los
+horarios pueden ser expresados en formato militar (sin el separador de dos
+puntos entre horas y minutos).
+
+Ejemplo:
+```
+1030,1200
 ```
