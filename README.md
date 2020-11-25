@@ -65,3 +65,9 @@ Ejemplo:
 ```
 1030,1200
 ```
+
+## Entrega
+
+Enviar el script renombrado como `nombre.apellido.js` a
+**postulacion2020@csw.cl**
+
