@@ -57,8 +57,16 @@ Ejemplos de posibles líneas de entrada:
 
 ## Formato de salida
 
-Entregar los resultados en formato CSV para el caso de coincidencia horaria. Los
-horarios deben ser expresados en formato militar (sin el separador de dos
+Entregar los resultados en formato
+[CSV](https://en.wikipedia.org/wiki/Comma-separated_values) para el caso de
+coincidencia horaria, siendo la primera columna el horario de inicio y la
+segunda el horario de finalización del rango de oportunidad.
+
+Si la solución otorga más de un rango posible de oportunidad, las columnas
+subsiguientes de la salida seguirán el mismo patrón: primera columna es inicio,
+segunda es el horario final.
+
+Los horarios deben ser expresados en formato militar (sin el separador de dos
 puntos entre horas y minutos).
 
 Ejemplo:
