@@ -1,0 +1,12 @@
+{
+  "name": "ejercicio-csw-2020-11",
+  "version": "1.0.0",
+  "description": "Escribir una aplicación que permita resolver el problema de coordinación de horarios",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": ". ./test.sh"
+  },
+  "author": "Fernando L. Canizo <fernandocanizo@gmail.com> (flc.muriandre.com)",
+  "license": "MIT"
+}
